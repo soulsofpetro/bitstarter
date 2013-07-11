@@ -1,4 +1,4 @@
-#!/usr/bin/env/  node
+#!/usr/bin/env  node
 
 
 /*
@@ -64,7 +64,7 @@ var clone = function(fn){
 };
 
 if(require.main == module){
-    programm
+    program
 	.option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT) 
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
         .parse(process.argv);
